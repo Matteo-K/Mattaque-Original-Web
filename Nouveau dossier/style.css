@@ -1,0 +1,384 @@
+				
+				/* Le Body */
+				
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color : #030D3E;
+}
+
+				/* Main */
+				
+main {
+	display : grid;
+	grid-template-areas:
+		"head head head head head"
+		"nav nav content content content"
+		"sect sect content content content"
+		"foot foot foot foot foot";
+	grid-template-rows : auto auto auto 120px;
+}
+
+				/* Header */
+				
+main header {
+	grid-area: head;
+	border : 3px solid white;
+	border-radius : 25px 25px 0 0;
+	background-color : #00105D;
+	color : #fff;
+}
+
+main header div.titre img{
+	width : 100px;
+	height : 100px;
+	object-fit : cover;
+	border-radius : 50%;
+	border : 1px solid black;
+	animation : rot 10s ease infinite;
+}
+
+main header div.titre h1 {
+	justify-content : center;
+}
+
+@keyframes rot {
+	50%{
+		transform : rotate(360deg) scale(0);
+	}
+	100%{
+		transform : rotate(-0deg) scale(1);
+	}
+}
+
+				/* Article */
+	
+main article {
+	grid-area : content;
+	margin:50px;
+	padding: 50px;
+	background-color: white;
+	border: 5px solid #1B42FF;
+	border-radius : 7% 3%;
+}
+		/* Div : acceuil */
+main article div.acceuil {
+	height: auto;
+	background: #F4F4F4;
+}
+
+main article div.acceuil h1 {
+	color : #D644A3;
+	font-size : 2rem;
+} 
+
+.indent {
+  text-indent: 20px;
+}
+
+main article div.acceuil ul li.bouton {
+	display: inline-block;
+	list-style-type: none;
+}
+
+main article div.acceuil ul li.bouton a {
+	font-family: Arial;
+	text-decoration: none;
+	padding: 10px;
+	border : 1px solid grey;
+	border-radius : 45px 10px;
+	color: white;
+	background-color: RGB(172,178,180);
+	cursor : pointer;
+}
+
+main article div.acceuil ul li.bouton a:active,main article div.acceuil ul li.bouton:active {
+	transform: translate(1.5px, 1.5px);
+	transition: 0.3s all;
+}
+		/* Div : Galerie photo */
+main article div.galerie-photo {
+	background: #F4F4F4;
+	display : flex;
+	height : 20rem;
+	gap : 1rem;
+}
+
+main article div.galerie-photo > div{
+	flex : 1;
+	border-radius : 1rem;
+	background-position : center;
+	background-repeat : no-repeat;
+	background-size : auto 100%;
+	transition : all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+main article div.galerie-photo > div:hover{
+	flex : 5;
+}
+
+				/* Section */
+
+main section {
+	grid-area: sect;
+	width : 300px;
+	border : 3px solid white;
+	background-color : #00105D;
+	color : #fff
+}
+
+				/* Navigation */
+
+main nav {
+	width : 300px;
+	grid-area : nav;
+	border : 3px solid white;
+	color : #fff;
+	background-color : #264E5B;
+}
+		/* Div : Menu */
+main nav div.menu {
+	background-color : #27B0DC;
+	display : flex;
+	justify-content : center;
+	padding : 10%;
+	border : 1px solid #fff;
+	border-radius : 0 0 14% 14%;
+	box-shadow : 0px 5px 10px #22A7D4;
+	list-style-type: none;
+}
+
+main nav div.menu:hover {
+	color : #27B0DC;
+	background-color : #fff;
+	transform : scale(101%);
+	transition: 0.8s all;
+}
+		/* Div : Sous-menu */
+main nav div.sous-menu h1:hover {
+	transform : scale(102%);
+	transition: 0.3s all;
+}
+
+main nav div.sous-menu h1 {
+	text-underline-offset: 8px;
+	font-size : 2rem;
+	display : flex;
+	justify-content : center;
+	text-decoration : underline;
+	text-decoration-color : #27B0DC;
+	text-decoration-style : dashed;
+}
+
+main nav div.sous-menu ul li.navigation a {
+	font-family: Arial;
+	text-decoration: none;
+	color : white;
+}
+
+main nav div.sous-menu div {
+	height : 60px;
+	width : 60px;
+	border : 2px solid #6CD0F1;
+	border-radius : 50px;
+	position : absolute;
+	top : 10%;
+	left : 10%;
+	box-shadow : 0px 2px 3px #90E4FF;
+	animation : 4s linear infinite;
+}
+
+main nav div.sous-menu div span.dot {
+	height : 10px;
+	width : 10px;
+	border-radius : 50px;
+	background : #fff;
+	position : absolute;
+	top : 20%;
+	right : 20%;
+}
+
+main nav div.sous-menu div:nth-child(1) {
+	top : 25%;
+	left : 9%;
+	animation : animate 16s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(2) {
+	top : 60%;
+	left : 2%;
+	animation : animate 20s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(3) {
+	top : 80%;
+	left : 4%;
+	animation : animate 6s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(4) {
+	top : 90%;
+	left : 10%;
+	animation : animate 18s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(5) {
+	top : 41.5%;
+	left : 9%;
+	animation : animate 8s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(6) {
+	top : 150%;
+	left : 9%;
+	animation : animate 28s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(7) {
+	top : 110%;
+	left : 2%;
+	animation : animate 48s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(8) {
+	top : 130%;
+	left : 3%;
+	animation : animate 12s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(9) {
+	top : 105%;
+	left : 8%;
+	animation : animate 18s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(10) {
+	top : 155%;
+	left : 3%;
+	animation : animate 14s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(11) {
+	top : 60%;
+	left : 11%;
+	animation : animate 18s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(12) {
+	top : 180%;
+	left : 2%;
+	animation : animate 10s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(13) {
+	top : 172%;
+	left : 10.5%;
+	animation : animate 16s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(14) {
+	top : 190%;
+	left : 8%;
+	animation : animate 24s linear infinite;
+}
+
+main nav div.sous-menu div:nth-child(15) {
+	top : 200%;
+	left : 3.5%;
+	animation : animate 28s linear infinite;
+}
+	/* Animation des bulles */
+@keyframes animate {
+	0% {
+		transform : scale(0) translatey (0) rotate(70deg);
+	}
+	50% {
+		transform : scale(1.3) translatey(-100px) rotate(360deg);
+	}
+	100% {
+		transform : scale(0) translatey (0) rotate(70deg);
+	}
+}
+
+nav p {
+	display : flex;
+	justify-content : center;
+	gap : 0 35px; 	/* Voir comment fonctionne le gap*/
+	font-size : 1.2rem; 	/* changer la taille */
+}
+
+				/* Footer */
+
+footer {
+	grid-area : foot;
+	border : 3px solid white;
+	color : #fff;
+	background-color : #020C10;
+}
+
+footer h1{
+	text-decoration : underline;
+	font-size : 1.5rem;
+}
+		/* Bouton */
+footer ul li.btn{
+	display: inline-block;
+	list-style-type: none;
+	padding: 10px;
+	margin:0 1px;
+}
+
+footer ul li.btn a {
+	font-family: Arial;
+	text-decoration: none;
+	padding: 10px;
+	border-radius : 15px;
+}
+
+footer ul li.btn div.Insta a{
+	color: white;
+	background-color: #EE4CC2;
+}
+
+footer ul li.btn div.Insta a :hover,footer ul li.btn div.Insta :hover {
+	color: #EE4CC2;
+	background-color: white;
+	transition: 0.3s all;
+}
+
+footer ul li.btn div.YTB a{
+	color: white;
+	background-color: #F64848;
+}
+
+footer ul li.btn div.YTB a :hover,footer ul li.btn div.YTB :hover {
+	color: #F64848;
+	background-color: white;
+	transition: 0.3s all;
+}
+
+footer ul li.btn div.FB a{
+	color: white;
+	background-color: #39C5E4;
+}
+
+footer ul li.btn div.FB a :hover,footer ul li.btn div.FB :hover {
+	color: #39C5E4;
+	background-color: white;
+	transition: 0.3s all;
+}
+
+footer ul li.btn div.Snap a{
+	color: white;
+	background-color: #D5DE24;
+}
+
+footer ul li.btn div.Snap a :hover,footer ul li.btn div.Snap :hover {
+	color: #D5DE24;
+	background-color: white;
+	transition: 0.3s all;
+}
+		/* Div : Secret */
+div.secret a,div.secret{
+	list-style-type: none;
+	color:#030D3E;
+}

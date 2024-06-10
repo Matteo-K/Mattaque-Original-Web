@@ -1,0 +1,137 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color : #030D3E;
+}
+
+header {
+	background-color : #00105D;
+	width : 100%;
+	border : 3px solid white;
+}
+
+header ul li.head a h1{
+	color : white;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+header img {
+	width : 100px;
+	height : 100px;
+	object-fit : cover;
+	box-shadow : 0px 0px 10px white;
+	position : relative;
+	left : 93%;
+}
+
+header ul li.head p{
+	color : white;
+}
+
+header nav.navigation ul li.btn{
+	display: inline-block;
+	list-style-type: none;
+	padding: 7px;
+	margin:0 5px;
+}
+
+header nav.navigation ul li.btn a{
+	color: white;
+	font-family: Arial;
+	background-color: #23BEF4;
+	text-decoration: none;
+	padding: 8px;
+}
+
+header nav.navigation ul li.btn a :hover, header nav.navigation ul li.btn :hover {
+	color : #23BEF4;
+	background-color : white;
+	transition: 0.3s all;
+}
+
+section {
+	margin:50px;
+	padding: 50px;
+	background-color: white;
+	border: 5px solid #1B42FF;
+}
+
+section div.acceuil {
+	height: 50%;
+	width: 100%;
+	background: #F4F4F4;
+}
+
+section div.acceuil h1 {
+	color : #D644A3;
+}
+
+footer {
+	background-color : #00105D;
+	color : white;
+	border : 3px solid white
+}
+
+footer p {
+	color : white;
+	height : 10px;
+	font-size: 30px;
+}
+
+nav.RS ul li.btn{
+	display: inline-block;
+	list-style-type: none;
+	padding: 10px;
+	margin:0 1px;
+}
+
+footer nav.RS ul li.btn a {
+	font-family: Arial;
+	text-decoration: none;
+	padding: 10px;
+	border-radius : 15px;
+}
+
+footer nav.RS ul li.btn div.Insta a{
+	color: white;
+	background-color: #EE4CC2;
+}
+
+footer nav.RS ul li.btn div.Insta a :hover,footer nav.RS ul li.btn div.Insta :hover {
+	color: #EE4CC2;
+	background-color: white;
+	transition: 0.3s all;
+}
+
+footer nav.RS ul li.btn div.YTB a{
+	color: white;
+	background-color: #F64848;
+}
+
+footer nav.RS ul li.btn div.YTB a :hover,footer nav.RS ul li.btn div.YTB :hover {
+	color: #F64848;
+	background-color: white;
+	transition: 0.3s all;
+}
+
+footer nav.RS ul li.btn div.FB a{
+	color: white;
+	background-color: #39C5E4;
+}
+
+footer nav.RS ul li.btn div.FB a :hover,footer nav.RS ul li.btn div.FB :hover {
+	color: #39C5E4;
+	background-color: white;
+	transition: 0.3s all;
+}
+
+footer nav.RS ul li.btn div.Snap a{
+	color: white;
+	background-color: #D5DE24;
+}
+
+footer nav.RS ul li.btn div.Snap a :hover,footer nav.RS ul li.btn div.Snap :hover {
+	color: #D5DE24;
+	background-color: white;
+	transition: 0.3s all;
+}
